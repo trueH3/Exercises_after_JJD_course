@@ -1,0 +1,5 @@
+/*
+ * Implement queue in which can be stored any elements. Implementation should 
+ * be made according to Queue interface. Use test QueueTest.java
+ * to check if the exercise is done correctly.
+ */
