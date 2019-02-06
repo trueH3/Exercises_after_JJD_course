@@ -17,47 +17,40 @@ public class QueueImpl<T> implements Queue<T> {
 
     @Override
     public void enqueue(T o) {
-//        if(wholeQueue.getNodeVal() == null){
-//            wholeQueue = new Node<>(o);
-//        }
-
-        //else{
-        Node<T> finalNode = getLastNode(wholeQueue);
-        finalNode.setNode(new Node<>(o));
+        if (sizeOfQueue == 0) {
+            wholeQueue.setNodeVal(o);
+        } else {
+            Node<T> finalNode = getLastNode(wholeQueue);
+            finalNode.setNode(new Node<>(o));
+        }
         this.sizeOfQueue++;
-        //}
-
     }
 
     @Override
     public T dequeue() {
-        if (wholeQueue.getNode() != null) {
-            wholeQueue = wholeQueue.getNode();
-            this.sizeOfQueue--;
-            return wholeQueue.getNodeVal();
+        T removedElement = wholeQueue.getNodeVal();
+        switch (sizeOfQueue) {
+            case 0:
+                throw new IllegalStateException("Queue is already empty");
+            case 1:
+                wholeQueue.setNodeVal(null);
+                break;
+            default:
+                wholeQueue = wholeQueue.getNode();
         }
-        return null;
+        this.sizeOfQueue--;
+        return removedElement;
     }
 
     @Override
     public int size() {
-       return this.sizeOfQueue;
-        }
-    
-    
-
-    
-
-    
-
-    
+        return this.sizeOfQueue;
+    }
 
     private Node<T> getLastNode(Node<T> n) {
-
         while (n.getNode() != null) {
             n = getLastNode(n.getNode());
         }
         return n;
     }
-
 }

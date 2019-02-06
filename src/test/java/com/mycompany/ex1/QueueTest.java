@@ -1,4 +1,5 @@
 package com.mycompany.ex1;
+
 import static org.junit.Assert.*;
 
 import org.junit.Test;
@@ -35,5 +36,11 @@ public class QueueTest {
         s = queue.dequeue();
         assertEquals("CCC", s);
         assertEquals(0, queue.size());
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void shouldThrowException() {
+        Queue<String> queue = new QueueImpl<>();
+        queue.dequeue();
     }
 }

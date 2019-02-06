@@ -1,5 +1,9 @@
-/*
- * Implement queue in which can be stored any elements. Implementation should 
- * be made according to Queue interface. Use test QueueTest.java
- * to check if the exercise is done correctly.
- */
+ex1.
+Implement queue in which can be stored any elements. Implementation should 
+be made according to Queue interface. Use test QueueTest.java
+to check if the exercise is done correctly.
+
+ex2.
+Implement stack in which can be stored any elements. Implementation should 
+be made according to Stack interface. Use test StackTest.java 
+to check if the exercise is done correctly.

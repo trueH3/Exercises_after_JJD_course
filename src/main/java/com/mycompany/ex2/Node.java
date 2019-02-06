@@ -1,4 +1,4 @@
-package com.mycompany.ex1;
+package com.mycompany.ex2;
 
 /**
  *
