@@ -7,3 +7,19 @@ ex2.
 Implement stack in which can be stored any elements. Implementation should 
 be made according to Stack interface. Use test StackTest.java 
 to check if the exercise is done correctly.
+
+ex3.
+Write two applications using JMS.
+a) first one - client - should be connected to topic and display text message
+that are sent by server(producer). Application should be terminated after receiving
+message "exit"
+b) second one - server - should be connected to topic and give the user ability to send messages 
+that are typed in console. When typed message is "exit", application should send the message and terminate. 
+
+Use ActiveMQ ( for example using docker: 
+$ docker run --name='activemq' -p 8161:8161 -p 61616:61616 -p 61613:61613 webcenter/activemq
+admin console: http://localhost:8161/admin/index.jsp
+login: admin, password admin
+Test app running one server and at least 2 clients. Each client should receive message 
+from server.
+
