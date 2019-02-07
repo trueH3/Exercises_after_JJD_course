@@ -28,7 +28,6 @@ public class Producer {
         Session session
                 = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
-        //Destination destination = session.createQueue("someQueue");
         Destination destination = session.createTopic("someTopic");
 
         MessageProducer producer = session.createProducer(destination);

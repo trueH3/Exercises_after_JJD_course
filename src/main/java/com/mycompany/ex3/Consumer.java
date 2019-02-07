@@ -32,7 +32,6 @@ public class Consumer implements Runnable, ExceptionListener {
 
             Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
-            //Destination destination = session.createQueue("someQueue");
             Destination destination = session.createTopic("someTopic");
 
             MessageConsumer consumer = session.createConsumer(destination);
