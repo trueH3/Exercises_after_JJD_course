@@ -23,3 +23,21 @@ login: admin, password admin
 Test app running one server and at least 2 clients. Each client should receive message 
 from server.
 
+ex4. 
+Write console app that will minimize by half the size of given photo.
+a) source file and target file should be given as program call parameters.
+b) size of the target file should be a half of the value of source file.
+for eg. source file with given size 800x600 should be rescaled to target file
+of size 400x300
+c) use Graphics/BufferedImage/ImageIcon classes or any other library to do the work.
+
+ex5.
+Write console app that will compress to .zip content of given folder.
+a) path to source folder should be given as application call parameter.
+b) path to target folder should be given as application call parameter (optional).
+if not then compressed file should be created on the same level as the source folder,
+with the name nazwaFolderu.zip
+c) compressed file should contains only files that are situated directly in given folder.
+Do not consider files/folders that are nested deeper.
+
+
