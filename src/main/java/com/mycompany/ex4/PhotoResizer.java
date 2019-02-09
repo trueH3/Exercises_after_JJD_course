@@ -37,5 +37,4 @@ public class PhotoResizer {
         String formatName = outputPath.substring(outputPath.lastIndexOf(".") + 1);
         ImageIO.write(bufferedOut, formatName, new File(outputPath));
     }
-
 }
