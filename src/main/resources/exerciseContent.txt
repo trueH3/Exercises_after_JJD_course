@@ -40,4 +40,15 @@ with the name nazwaFolderu.zip
 c) compressed file should contains only files that are situated directly in given folder.
 Do not consider files/folders that are nested deeper.
 
+ex6.
+Write console app that will fetch WWW address from user and check available
+http method and size of the resource.
+a) user should be able to give address as a program call parameter or directly 
+after launching app via Scanner.
+b) if given address does not exists, app should inform about it user and terminate 
+with exit code other than 0.
+c) if given address exists then app should display available http method  and size 
+of the content
+d) app shouldn't download physically content pointed by address.
+Use http method: HEAD, OPTIONS
 

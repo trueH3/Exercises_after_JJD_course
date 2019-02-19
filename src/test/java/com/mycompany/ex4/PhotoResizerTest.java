@@ -17,8 +17,6 @@ import static org.junit.Assert.*;
  */
 public class PhotoResizerTest {
 
-    public PhotoResizerTest() {
-    }
 
     @Test
     public void shouldShrinkPictureByHalf() throws Exception {
